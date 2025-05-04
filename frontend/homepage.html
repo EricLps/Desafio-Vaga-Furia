@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FURIA Feed</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <!-- Barra superior -->
+        <header class="top-nav">
+            <div class="logo-area">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/f/f9/Furia_Esports_logo.png" alt="FURIA Logo" class="logo-nav" />
+                <h1>FURIA Fan Insights</h1>
+            </div>
+            <nav class="top-menu">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="perfil.html">Perfil</a>
+                <a href="#suporte">Suporte</a>
+            </nav>
+        </header>
+
+        <!-- Formulário de postagem -->
+        <section class="mini-post-form">
+            <form id="post-form" enctype="multipart/form-data">
+                <textarea id="post-text" placeholder="O que você está pensando?" rows="2"></textarea>
+
+                <div class="upload-buttons">
+                    <label class="upload-btn">
+                        📷 Foto
+                        <input type="file" accept="image/*" id="photo-upload" hidden>
+                    </label>
+
+                    <label class="upload-btn">
+                        🎥 Vídeo
+                        <input type="file" accept="video/*" id="video-upload" hidden>
+                    </label>
+                </div>
+
+                <!-- Contêiner para exibir a miniatura -->
+                <div id="thumbnail-container" style="display: none;">
+                    <div id="thumbnail-preview"></div>
+                    <button type="button" id="remove-thumbnail">Remover</button>
+                </div>
+
+                <button type="submit" title="Postar">✈️ Postar</button>
+            </form>
+        </section>
+
+        <!-- Feed de posts -->
+        <section id="feed">
+            <!-- Os posts serão carregados dinamicamente aqui -->
+        </section>
+    </main>
+
+    <script src="js/homepage.js"></script>
+    <script src="js/post.js"></script>
+</body>
+
+</html>

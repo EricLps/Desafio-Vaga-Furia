@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FURIA Fan Insights</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="https://upload.wikimedia.org/wikipedia/pt/f/f9/Furia_Esports_logo.png" alt="FURIA Logo" class="logo" />
+            <h1>FURIA Fan Insights</h1>
+        </header>
+
+        <main class="main">
+            <h2>Descubra como você vive a FÚRIA</h2>
+            <p>Conecte suas redes sociais, analise seu comportamento e entre no ranking de fãs.</p>
+
+            <!-- Botões para alternar entre Login e Registro -->
+            <div class="auth-toggle">
+                <button id="login-btn">Já tem uma conta? Entrar</button>
+                <button id="register-btn">Ainda não tem conta? Registrar</button>
+            </div>
+
+            <!-- Formulário de Registro (oculto por padrão) -->
+            <form id="register-form" class="auth-form" style="display: none;">
+                <input type="text" id="name" placeholder="Nome" required />
+                <input type="email" id="email" placeholder="Email" required />
+                <input type="password" id="password" placeholder="Senha" required />
+                <button type="submit">Registrar</button>
+                <button type="button" id="back-btn-register">Voltar</button> <!-- Botão Voltar -->
+            </form>
+
+            <!-- Formulário de Login (visível por padrão) -->
+            <form id="login-form" class="auth-form">
+                <input type="email" id="login-email" placeholder="Email" required />
+                <input type="password" id="login-password" placeholder="Senha" required />
+                <button type="submit">Entrar</button>
+                <button type="button" id="back-btn-login">Voltar</button> <!-- Botão Voltar -->
+            </form>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 FURIA Fan Insights</p>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

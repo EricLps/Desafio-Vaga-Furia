@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - FURIA Fan Insights</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- Barra Superior -->
+    <header class="top-nav">
+        <div class="logo-area">
+            <img src="https://upload.wikimedia.org/wikipedia/pt/f/f9/Furia_Esports_logo.png" alt="Logo FURIA" class="logo-nav">
+            <h1>FURIA Fan Insights</h1>
+        </div>
+        <nav class="top-menu">
+            <a href="homepage.html">Home</a>
+            <a href="perfil.html">Perfil</a>
+        </nav>
+    </header>
+
+    <div class="dashboard-container">
+        <!-- Cabeçalho com informações do usuário -->
+        <header class="dashboard-header">
+            <div class="user-info">
+                <h2>Olá, Usuário</h2>
+            </div>
+        </header>
+
+        <!-- Cards com métricas -->
+        <section class="cards">
+            <div class="card">
+                <h3>Tweets sobre a FURIA</h3>
+                <p>356</p>
+            </div>
+            <div class="card">
+                <h3>Sentimento Positivo</h3>
+                <p>73%</p>
+            </div>
+            <div class="card">
+                <h3>Última menção</h3>
+                <p>há 2 dias</p>
+            </div>
+        </section>
+
+        <!-- Gráfico -->
+        <section class="chart-section">
+            <h3>Postagens nos Últimos Dias</h3>
+            <div style="position: relative; height: 300px; width: 100%;">
+                <canvas id="sentimentoChart"></canvas>
+            </div>
+        </section>
+
+        <!-- Sentimento Geral -->
+        <div class="dashboard-sentiment">
+            <h3>Sentimento Geral</h3>
+        </div>
+
+        <section class="fan-score-section">
+            <h3>Pontuação do Fã</h3>
+            <div class="progress-bar-container">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+        </section>
+
+        <section class="ranking">
+            <!-- Removido -->
+        </section>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>

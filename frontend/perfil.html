@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil do Fã - FURIA Fan Insights</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- Barra superior -->
+    <header class="top-nav">
+        <div class="logo-area">
+            <img src="https://upload.wikimedia.org/wikipedia/pt/f/f9/Furia_Esports_logo.png" alt="Logo" class="logo-nav" />
+            <h1>FURIA Fan Insights</h1>
+        </div>
+        <nav class="top-menu">
+            <a href="homepage.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="perfil.html">Perfil</a>
+        </nav>
+    </header>
+
+    <div class="perfil-container">
+        <!-- Header com avatar, nome e bio -->
+        <section class="perfil-header fade-in" id="profileSection">
+            <div class="perfil-avatar-container">
+                <img src="https://cdn-icons-png.flaticon.com/512/711/711769.png" alt="Avatar do usuário" class="perfil-avatar" id="profileImage">
+            </div>
+            <div class="perfil-info">
+                <h1 id="profileName">Nome do Usuário</h1>
+                <p class="perfil-bio" id="profileBio">Biografia do usuário</p>
+                <button class="edit-profile-btn" id="editProfileBtn">✏️ Editar Perfil</button>
+            </div>
+        </section>
+
+        <!-- Estatísticas do fã -->
+        <section class="perfil-estatisticas scroll-reveal fade-in">
+            <div class="estatistica">
+                <h3>Tweets</h3>
+                <p id="tweetCount">0</p>
+            </div>
+            <div class="estatistica">
+                <h3>Menções</h3>
+                <p id="mentionCount">0</p>
+            </div>
+            <div class="estatistica">
+                <h3>Sentimento Médio</h3>
+                <p id="sentimentAvg">0%</p>
+            </div>
+        </section>
+
+        <!-- Conquistas -->
+        <section class="perfil-conquistas scroll-reveal">
+            <h2>Conquistas</h2>
+            <div class="badge-list" id="badgesContainer">
+                <!-- Conquistas serão inseridas aqui -->
+            </div>
+        </section>
+
+        <!-- Histórico -->
+        <section class="perfil-historico scroll-reveal">
+            <h2>Últimas Interações</h2>
+            <ul id="interactionList">
+                <!-- Interações serão carregadas dinamicamente -->
+            </ul>
+        </section>
+
+        <!-- POSTS DO USUÁRIO -->
+        <section class="perfil-posts">
+            <h2>Meus Posts</h2>
+            <div id="userPosts" class="post-list">
+                <!-- Posts do usuário serão inseridos aqui -->
+            </div>
+        </section>
+
+    <!-- Modal de edição de perfil -->
+    <div class="editar-perfil-modal hidden" id="editProfileModal">
+        <h2>Editar Perfil</h2>
+        <input type="file" id="editImage" accept="image/*" />
+        <input type="text" id="editName" placeholder="Novo nome" />
+        <button class="btn salvar-perfil" id="saveProfileBtn">Salvar Alterações</button>
+        <button class="btn cancelar-perfil" id="cancelProfileBtn">Cancelar</button>
+    </div>
+
+    <script src="js/perfil.js"></script>
+</body>
+
+</html>
