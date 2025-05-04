@@ -140,7 +140,8 @@ frontend/
 
 📌 Licença
 
-Este projeto é apenas para fins educacionais e de demonstração. Fique à vontade para personalizar ou evoluir.
+Este projeto foi feito para a aplicação de uma vaga na Furia. Fique à vontade para personalizar ou evoluir.
+
 🙌 Feito por
 
 Eric Lopes
